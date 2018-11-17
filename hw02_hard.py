@@ -5,7 +5,7 @@
 import re
 import string
 
-text1 = input('Пишите текст только английскими буквами, исключив цифры, разрешенные символы "" ')
+text1 = input('Введите текст: ')
 text2 = text1.lower().replace(", ", " ").replace(". ", " ").replace(".", "").replace("!", "").replace("?", "").split()
 print(text2)
 c = len(text2)
