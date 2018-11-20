@@ -14,7 +14,7 @@ text1 = text1.lower().replace(", ", "").replace(". ", "").replace(".", "").repla
 text1 = re.sub(r'\s+', '', text1)
 text1 = list(text1)  # Преобразуем строку в список для отделения символов
 text1C = set(text1)  # Преобразуем список во множество для удаления дублей
-text1 = ''.join(i for i in text1C if i in string.ascii_letters) # Преобразуем в строку только латинские буквы
+text1 = ''.join(i for i in text1C if i in string.ascii_letters)  # Преобразуем в строку только латинские буквы
 print(text1)
 print("Количество использованных букв английского алфвита:", len(text1))
 
